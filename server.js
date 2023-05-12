@@ -20,10 +20,6 @@ const db = knex({
   }
 });
 
-// Connecting to Smart-Brain Database
-// Run the command psql -U postgres
-// Run the command \c smart-brain
-
 const app = express();
 
 app.use(cors())
@@ -65,10 +61,10 @@ app.listen(process.env.PORT || 3000, () => {
 
 /* Server Blueprint
 
-/ 				 --> res = this is working
-/signin 		 --> POST = success/fail
-/register 		 --> POST = user
-/profile/:userId --> GET = user
-/image 			 --> PUT = user
+/ 				          --> res = this is working
+/signin 		        --> POST = success/fail
+/register 		      --> POST = user
+/profile/:userId    --> GET = user
+/image 			        --> PUT = user
 
 */
